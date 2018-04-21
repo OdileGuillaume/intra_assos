@@ -1,0 +1,37 @@
+body
+{
+    background-color:rgb(52, 73, 94);
+}
+
+.container-fluid{
+    background-color:rgb(52, 73, 94);
+}
+
+.entete{
+    height: 100vh;
+    background-color:rgb(52, 73, 94);
+}
+
+.test{
+    position: relative;
+    top: 17px;
+    height: 100vh;
+    background-color: white;
+}
+
+.intra{
+    position: relative;
+    top: 17px;
+    color: white;
+}
+
+
+.search{
+    position: relative;
+    top: 23px;
+}
+
+.deco{
+    position: relative;
+    top: 23px;
+}
