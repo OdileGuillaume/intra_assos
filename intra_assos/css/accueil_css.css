@@ -12,10 +12,43 @@ body
     background-color:rgb(52, 73, 94);
 }
 
+.blocks{
+    position: relative;
+    top: 17px;
+    left: 30px;
+    height: 7vh;
+    background-color:rgb(52, 73, 94);
+    border: 2px solid gray;
+    color: white;
+}
+
+.backblue{
+    color: white;
+    background-color: rgb(52, 73, 94);
+}
+
+.blkcontent{
+    background-color: white;
+    position: relative;
+    top: 16px;
+    left: 30px;
+    height: 63vh;
+    border: 2px solid gray;
+}
+
+
+.imgdef{
+    position: relative;
+    top: 17px;
+    left: 5px;
+    text-align: center;
+    color: white;
+}
+
 .test{
     position: relative;
     top: 17px;
-    height: 100vh;
+    height: 80vh;
     background-color: white;
 }
 
@@ -28,10 +61,18 @@ body
 
 .search{
     position: relative;
-    top: 23px;
+    left: 120px;
+    top: 30px;
+}
+
+.imgsearch{
+    position: relative;
+    left: 190px;
+    top: 30px;
 }
 
 .deco{
     position: relative;
-    top: 23px;
+    left: 80px;
+    top: 30px;
 }
