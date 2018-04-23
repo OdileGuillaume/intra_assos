@@ -2,20 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Page d'accueil</title>
+    <title>Demande de réunion</title>
     <link rel="stylesheet" href="css/accueil_css.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
 </head>
 <body>
 <div class="container-fluid entete">
     <div class="row">
 
         <div class="col-md-1">
-        <img src="epita_logo.png" width="150" height="100" alt="epita logo">
+            <img src="epita_logo.png" width="150" height="100" alt="epita logo">
         </div>
 
         <div class="col-md-3 intra col-md-offset-1">
-        <h3>Intranet des associations</h3>
+            <h3>Intranet des associations</h3>
         </div>
 
         <div class="col-md-1 imgsearch">
@@ -39,22 +39,47 @@
             <br>
             Mes associations
         </div>
+
         <div class="col-md-10 test">
             <div class="col-md-5 blocks">
-                <h4>Réunions à venir</h4>
+                <h4>Demande de réunion</h4>
             </div>
 
             <div class="col-md-offset-1 col-md-5 blocks">
-                <h4>Mes associations</h4>
+                <h4>Réunions à venir</h4>
             </div>
 
             <div class="col-md-5 blkcontent">
-                <h4>Vous n'êtes pas dans une association</h4>
+                <br>
+                <br>
+
+                <a href="template_reunion.docx" download="template_reunion.docx">
+                    <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-download-alt" style="color: white"></span></button>
+                </a>Télécharger le fichier à remplir
+
+                <br>
+                <br>
+                <br>
+                <br>
+                <form>
+                    <div class="form-group">
+                        <label for="ajouterfichier">Sélectionner l'odre du jour pour la demande de réunion</label>
+                        <input type="file" class="form-control-file" id="ajouterfichier">
+                    </div>
+                </form>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <input class="btn btn-primary" type="button" value="Envoyer">
             </div>
 
             <div class="col-md-offset-1 col-md-5 blkcontent">
                 <h4>Aucune réunion n'est prévu pour le moment.</h4>
             </div>
+
         </div>
 
     </div>

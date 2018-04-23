@@ -18,7 +18,7 @@ body
     left: 30px;
     height: 7vh;
     background-color:rgb(52, 73, 94);
-    border: 2px solid gray;
+    border: 2px solid rgb(44, 62, 80);
     color: white;
 }
 
@@ -33,7 +33,7 @@ body
     top: 16px;
     left: 30px;
     height: 63vh;
-    border: 2px solid gray;
+    border: 2px solid rgb(44, 62, 80);
 }
 
 
