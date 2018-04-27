@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demande de réunion</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/accueil_css.css' %}">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" media="screen">
+</head>
+<body>
+<div class="container-fluid entete">
+    <div class="row">
+
+        <div class="col-md-1">
+            <a href="{% url 'accueil' %}">
+            {% load static %}
+            <img src="{% static 'epita_logo.png' %}" width="150" height="100" alt="epita logo">
+            </a>
+        </div>
+
+        <div class="col-md-3 intra col-md-offset-1">
+            <h3>Intranet des associations</h3>
+        </div>
+
+        <div class="col-md-1 imgsearch">
+            {% load static %}
+            <input type="image" src="{% static 'loupe.png' %}" width="36" height="36">
+        </div>
+        <div class="col-md-3 search">
+            <input class="form-control" type="text" name="Recherche" placeholder="Rechercher une association" size="20" maxlength="120" />
+        </div>
+
+        <div class="col-md-1 deco col-md-offset-1">
+            <a href="{% url 'login'%}?next={{request.path}}" class="btn btn-default" role="button" aria-pressed="true">Déconnexion</a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-2  imgdef">
+            {% load static %}
+            <img src="{% static 'profile_default.png' %}" width="150" height="160">
+            <br>
+            <br>
+
+            {{ user.first_name }}
+            {{ user.last_name }}
+            <br>
+            Mes associations
+        </div>
+
+        <div class="col-md-10 test">
+            <div class="col-md-5 blocks">
+                <h4>Demande de réunion</h4>
+            </div>
+
+            <div class="col-md-offset-1 col-md-5 blocks">
+                <h4>Réunions à venir</h4>
+            </div>
+
+            <div class="col-md-5 blkcontent">
+                <br>
+                <br>
+
+                <a href="template_reunion.docx" download="template_reunion.docx">
+                    <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-download-alt" style="color: white"></span></button>
+                </a>Télécharger le fichier à remplir
+
+                <br>
+                <br>
+                <br>
+                <br>
+                <form>
+                    <div class="form-group">
+                        <label for="ajouterfichier">Sélectionner l'odre du jour pour la demande de réunion</label>
+                        <input type="file" class="form-control-file" id="ajouterfichier">
+                    </div>
+                </form>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <input class="btn btn-primary" type="button" value="Envoyer">
+            </div>
+
+            <div class="col-md-offset-1 col-md-5 blkcontent">
+                <h4>Aucune réunion n'est prévu pour le moment.</h4>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+</body>
+</html>
