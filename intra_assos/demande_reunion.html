@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Demande de réunion</title>
-    <link rel="stylesheet" href="css/accueil_css.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+    {% load static %}
+    <link rel="stylesheet" href="{% static css/accueil_css.css %}">
+    {% load static %}
+    <link rel="stylesheet" href="{% static css/bootstrap.min.css %}" media="screen">
 </head>
 <body>
 <div class="container-fluid entete">
     <div class="row">
 
         <div class="col-md-1">
-            <img src="epita_logo.png" width="150" height="100" alt="epita logo">
+            {% load static %}
+            <img src="{% static epita_logo.png %}" width="150" height="100" alt="epita logo">
         </div>
 
         <div class="col-md-3 intra col-md-offset-1">
@@ -19,7 +22,8 @@
         </div>
 
         <div class="col-md-1 imgsearch">
-            <input type="image" src="loupe.png" width="36" height="36">
+            {% load static %}
+            <input type="image" src="{% static loupe.png %}" width="36" height="36">
         </div>
         <div class="col-md-3 search">
             <input class="form-control" type="text" name="Recherche" placeholder="Rechercher une association" size="20" maxlength="120" />
@@ -32,7 +36,8 @@
 
     <div class="row">
         <div class="col-md-2  imgdef">
-            <img src="profile_default.png" width="150" height="160">
+            {% load static %}
+            <img src="{% static profile_default.png %}" width="150" height="160">
             <br>
             NOM Prénom
             <br>
