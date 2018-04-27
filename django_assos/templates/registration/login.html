@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Intranet des associations</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/index_css.css' %}">
+
+</head>
+{% if form.errors %}
+<p>Your username and password didn't match. Please try again.</p>
+{% endif %}
+
+{% if next %}
+{% if user.is_authenticated %}
+<p>Your account doesn't have access to this page. To proceed,
+    please login with an account that has access.</p>
+{% else %}
+<p>Please login to see this page.</p>
+{% endif %}
+{% endif %}
+
+<form method="post" action="{% url 'login' %}">
+    {% csrf_token %}
+    <h1>Intranet des associations</h1>
+
+    {% load static %}
+    <img src="{% static 'epita_logo.png' %}" width="400" height="270" alt="epita logo">
+
+    <div>
+        </br>
+        <td>{{ form.username.label_tag }}</td>
+        <td>{{ form.username }}</td>
+    </div>
+    <div>
+        <td>{{ form.password.label_tag }}</td>
+        <td>{{ form.password }}</td>
+    </div>
+
+    <div>
+        <input type="submit" value="login" />
+        <input type="hidden" name="next" value="{{ next }}" />
+    </div>
+</br>
+
+{# Assumes you setup the password_reset view in your URLconf #}
+<p><a href="{% url 'password_reset' %}">Lost password?</a></p>
+</form>
+</html>

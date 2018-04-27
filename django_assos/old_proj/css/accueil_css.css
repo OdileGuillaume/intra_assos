@@ -1,0 +1,78 @@
+body
+{
+    background-color:rgb(52, 73, 94);
+}
+
+.container-fluid{
+    background-color:rgb(52, 73, 94);
+}
+
+.entete{
+    height: 100vh;
+    background-color:rgb(52, 73, 94);
+}
+
+.blocks{
+    position: relative;
+    top: 17px;
+    left: 30px;
+    height: 7vh;
+    background-color:rgb(52, 73, 94);
+    border: 2px solid rgb(44, 62, 80);
+    color: white;
+}
+
+.backblue{
+    color: white;
+    background-color: rgb(52, 73, 94);
+}
+
+.blkcontent{
+    background-color: white;
+    position: relative;
+    top: 16px;
+    left: 30px;
+    height: 63vh;
+    border: 2px solid rgb(44, 62, 80);
+}
+
+
+.imgdef{
+    position: relative;
+    top: 17px;
+    left: 5px;
+    text-align: center;
+    color: white;
+}
+
+.test{
+    position: relative;
+    top: 17px;
+    height: 80vh;
+    background-color: white;
+}
+
+.intra{
+    position: relative;
+    top: 17px;
+    color: white;
+}
+
+
+.search{
+    position: relative;
+    left: 120px;
+    top: 30px;
+}
+
+.imgsearch{
+    position: relative;
+    left: 190px;
+    top: 30px;
+}
+
+.deco{
+    position: relative;
+    left: 80px;
+    top: 30px;
+}
